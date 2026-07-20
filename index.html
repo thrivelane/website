@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why We Sleep | Unlocking the Power of Sleep and Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8F8F6',
+                        navy: '#0B2343',
+                        secondary: '#143A67',
+                        gold: '#E1B84A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F8F6; color: #0B2343; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .book-placeholder { width: 300px; height: 420px; background: rgba(11, 35, 67, 0.05); border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px dashed #0B2343; margin: 0 auto 40px auto; }
+    </style>
+</head>
+<body class="antialiased">
+    <script>
+        const lockerURL = "YOUR_LOCKER_URL_HERE";
+        function redirectToLocker() {
+            window.location.href = lockerURL;
+        }
+    </script>
+    <!-- Hero Section -->
+    <section id="hero-download" class="py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl md:text-6xl leading-tight mb-6">Why Millions Recommend<br><span class="text-secondary">Why We Sleep</span></h1>
+            <p class="text-xl opacity-80 mb-8 max-w-2xl mx-auto">One of the world's bestselling books about sleep, memory, brain health, and long-term wellbeing.</p>
+            
+            <div class="flex justify-center gap-4 mb-12 text-sm font-semibold text-gold">
+                <span>★ Bestseller</span> <span>• Millions of readers</span> <span>• Science-backed</span>
+            </div>
+            <div class="book-placeholder">3D Book Cover Placeholder</div>
+            <button onclick="redirectToLocker()" class="inline-block bg-navy text-white px-12 py-4 rounded-full text-lg hover:bg-secondary transition-all">Download (PDF)</button>
+        </div>
+    </section>
+    <!-- Why Worth Reading -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center mb-12">Why This Book Is Worth Reading</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
+                    <div class="text-gold text-3xl mb-4">🧠</div>
+                    <p class="font-medium">Understand how sleep shapes your brain and improves memory.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
+                    <div class="text-gold text-3xl mb-4">⚡</div>
+                    <p class="font-medium">Discover why sleep is your body's hidden superpower for energy.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
+                    <div class="text-gold text-3xl mb-4">📖</div>
+                    <p class="font-medium">Evidence-based insights backed by decades of neuroscience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quote -->
+    <section class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-gold text-6xl mb-8">"</div>
+            <p class="text-3xl md:text-5xl font-serif italic mb-10 max-w-4xl mx-auto">Sleep is the single most effective thing we can do to reset our brain and body.</p>
+            <p class="text-gold font-semibold uppercase tracking-widest">— Matthew Walker</p>
+        </div>
+    </section>
+    <!-- Verification Section -->
+    <section id="verification-section" class="py-24 text-center">
+        <!-- Content Locker Placeholder -->
+        <div id="content-locker-placeholder"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-10 text-center text-sm opacity-60">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Disclaimer</a>
+        </div>
+        <p>&copy; 2026 ThriveLane. All rights reserved.</p>
+    </footer>
+    <!-- Sticky Button -->
+    <div class="fixed bottom-6 left-0 right-0 flex justify-center z-50 px-4">
+        <button onclick="redirectToLocker()" class="bg-navy text-white px-8 py-3 rounded-full shadow-2xl hover:bg-secondary transition-all font-semibold">Download Why We Sleep</button>
+    </div>
+</body>
+</html>
