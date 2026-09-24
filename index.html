@@ -2,96 +2,542 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="p:domain_verify" content="53cf3cdee882ac44a81ae58c93544f3c"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why We Sleep | Unlocking the Power of Sleep and Dreams</title>
+
+    <title>ThriveLane | Better Sleep, Better Life</title>
+
+    <meta name="description" content="Explore practical sleep information and an independent look at Yu Sleep, a sleep-focused dietary supplement.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        bg: '#F8F8F6',
-                        navy: '#0B2343',
-                        secondary: '#143A67',
-                        gold: '#E1B84A'
+                        'offwhite': '#F8F8F6',
+                        'navy': '#0B2343',
+                        'secondary-navy': '#143A67',
+                        'gold': '#E1B84A',
+                        'pure-white': '#FFFFFF'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8F8F6; color: #0B2343; }
-        h1, h2 { font-family: 'Playfair Display', serif; }
-        .book-placeholder { width: 300px; height: 420px; background: rgba(11, 35, 67, 0.05); border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px dashed #0B2343; margin: 0 auto 40px auto; }
-    </style>
 </head>
-<body class="antialiased">
-    <script>
-        const lockerURL = "https://appsave.online/cl/i/82vw9j";
-        function redirectToLocker() {
-            window.location.href = lockerURL;
-        }
-    </script>
-    <!-- Hero Section -->
-    <section id="hero-download" class="py-20 text-center">
-        <div class="container mx-auto px-6">
-            <h1 class="text-5xl md:text-6xl leading-tight mb-6">Why Millions Recommend<br><span class="text-secondary">Why We Sleep</span></h1>
-            <p class="text-xl opacity-80 mb-8 max-w-2xl mx-auto">One of the world's bestselling books about sleep, memory, brain health, and long-term wellbeing.</p>
-            
-            <div class="flex justify-center gap-4 mb-12 text-sm font-semibold text-gold">
-                <span>★ Bestseller</span> <span>• Millions of readers</span> <span>• Science-backed</span>
+
+<body class="bg-offwhite text-navy font-sans antialiased selection:bg-gold/30">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-offwhite/90 backdrop-blur-md border-b border-navy/10">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+
+            <div class="flex flex-col">
+                <a href="#" class="font-serif text-xl font-bold tracking-tight text-navy">
+                    THRIVELANE
+                </a>
+
+                <span class="text-[10px] tracking-widest uppercase text-secondary-navy/70 font-medium">
+                    BETTER SLEEP, BETTER LIFE
+                </span>
             </div>
-            <img src="cover.png"
-     alt="Why We Sleep"
-     class="w-[300px] mx-auto mb-10 rounded-2xl shadow-2xl">
-            <button onclick="redirectToLocker()" class="inline-block bg-navy text-white px-12 py-4 rounded-full text-lg hover:bg-secondary transition-all">Download (PDF)</button>
+
+            <nav class="flex items-center">
+                <a href="#product"
+                   class="text-xs font-semibold tracking-wide text-navy hover:text-secondary-navy px-3.5 py-1.5 rounded-full border border-navy/20 hover:border-navy transition-all">
+                    Sleep Wellness
+                </a>
+            </nav>
+
         </div>
-    </section>
-    <!-- Why Worth Reading -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl text-center mb-12">Why This Book Is Worth Reading</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
-                    <div class="text-gold text-3xl mb-4">🧠</div>
-                    <p class="font-medium">Understand how sleep shapes your brain and improves memory.</p>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="py-12 md:py-20 border-b border-navy/5">
+
+            <div class="max-w-5xl mx-auto px-6">
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+
+                    <!-- HERO TEXT -->
+                    <div class="md:col-span-7 flex flex-col items-start space-y-5">
+
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/15 text-navy text-xs font-semibold tracking-wide uppercase">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                            Independent Information
+                        </div>
+
+                        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-[1.15]">
+                            Why Sleep Can Still Feel Difficult
+                        </h1>
+
+                        <p class="text-secondary-navy/80 text-base sm:text-lg font-light leading-relaxed">
+                            Getting enough time in bed does not always mean getting the quality of rest you want. Sleep can be affected by routines, environment, stress, and other everyday factors.
+                        </p>
+
+                        <p class="text-sm text-secondary-navy/70 leading-relaxed font-light">
+                            At ThriveLane, we take a closer look at sleep-focused products and information so you can understand what they are and review the official information before deciding whether an option fits your needs.
+                        </p>
+
+                        <div class="pt-2">
+                            <a href="#product"
+                               class="inline-flex justify-center items-center px-7 py-3.5 rounded-xl bg-navy text-pure-white font-medium hover:bg-secondary-navy transition-all shadow-sm text-sm group">
+
+                                Explore Yu Sleep
+
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-y-0.5 transition-transform"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M19 9l-7 7-7-7">
+                                    </path>
+                                </svg>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- HERO IMAGE -->
+                    <div class="md:col-span-5 relative">
+
+                        <div class="absolute -inset-3 bg-gold/10 rounded-2xl -z-10 transform rotate-1"></div>
+
+                        <div class="rounded-xl overflow-hidden shadow-xl border border-white/60 aspect-[4/5] bg-secondary-navy/10">
+
+                            <img
+                                src="hero-yusleep.png"
+                                alt="Calm nighttime bedroom with a woman sleeping and Yu Sleep on the bedside table"
+                                class="w-full h-full object-cover"
+                                loading="eager">
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
-                    <div class="text-gold text-3xl mb-4">⚡</div>
-                    <p class="font-medium">Discover why sleep is your body's hidden superpower for energy.</p>
-                </div>
-                <div class="p-8 rounded-2xl border border-navy/10 hover:border-gold/50 transition-all">
-                    <div class="text-gold text-3xl mb-4">📖</div>
-                    <p class="font-medium">Evidence-based insights backed by decades of neuroscience.</p>
-                </div>
+
             </div>
+
+        </section>
+
+
+        <!-- FEATURED PRODUCT -->
+        <section id="product"
+                 class="py-16 md:py-20 bg-pure-white border-b border-navy/10">
+
+            <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+
+                <span class="inline-block text-[11px] font-semibold tracking-widest uppercase text-navy bg-gold/20 px-3 py-1 rounded-full">
+                    FEATURED SLEEP PRODUCT
+                </span>
+
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy">
+                    Yu Sleep: A Closer Look
+                </h2>
+
+                <p class="text-secondary-navy/80 text-base sm:text-lg font-light max-w-2xl mx-auto leading-relaxed">
+                    Yu Sleep is presented by its official source as a dietary supplement focused on sleep support. Before deciding whether it is relevant to you, review the official presentation and product information directly.
+                </p>
+
+                <div class="pt-2">
+
+                    <p class="text-xs text-navy/50 tracking-wide">
+                        Affiliate disclosure: ThriveLane may receive compensation if you purchase through our link.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT IS YU SLEEP -->
+        <section class="py-16 md:py-20 bg-offwhite">
+
+            <div class="max-w-4xl mx-auto px-6">
+
+                <div class="bg-pure-white p-8 sm:p-12 rounded-2xl border border-navy/10 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+
+                    <!-- PRODUCT IMAGE -->
+                    <div class="md:col-span-5">
+
+                        <div class="rounded-xl overflow-hidden bg-white border border-navy/5 aspect-square flex items-center justify-center p-6">
+
+                            <img
+                                src="yusleep-bottle.png"
+                                alt="Yu Sleep dietary supplement bottle"
+                                class="max-w-full max-h-full object-contain">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT INFORMATION -->
+                    <div class="md:col-span-7 space-y-6">
+
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-navy">
+                            What Is Yu Sleep?
+                        </h2>
+
+                        <ul class="space-y-4 text-secondary-navy/80 text-sm sm:text-base font-light">
+
+                            <li class="flex items-start gap-3">
+
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+
+                                <div>
+                                    <strong class="font-medium text-navy">
+                                        Dietary supplement:
+                                    </strong>
+                                    Yu Sleep is presented as a dietary supplement intended for sleep support.
+                                </div>
+
+                            </li>
+
+
+                            <li class="flex items-start gap-3">
+
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+
+                                <div>
+                                    <strong class="font-medium text-navy">
+                                        Sleep-focused:
+                                    </strong>
+                                    The product is presented specifically around nighttime and sleep-related needs.
+                                </div>
+
+                            </li>
+
+
+                            <li class="flex items-start gap-3">
+
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+
+                                <div>
+                                    <strong class="font-medium text-navy">
+                                        Official information:
+                                    </strong>
+                                    More detailed product information is available through the official Yu Sleep presentation.
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT TO KNOW -->
+        <section class="py-16 md:py-20 bg-pure-white border-y border-navy/10">
+
+            <div class="max-w-4xl mx-auto px-6">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+
+                    <h2 class="font-serif text-3xl font-bold text-navy">
+                        What to Know Before You Decide
+                    </h2>
+
+                    <p class="mt-4 text-secondary-navy/70 text-sm sm:text-base font-light leading-relaxed">
+                        A closer look at any sleep product should start with clear information and realistic expectations.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+                    <div class="p-6 rounded-xl bg-offwhite border border-navy/10">
+
+                        <span class="font-serif font-bold text-navy text-lg block mb-2">
+                            1. Understand the product
+                        </span>
+
+                        <p class="text-xs sm:text-sm text-secondary-navy/70 leading-relaxed">
+                            Review the official presentation and available product information before making a decision.
+                        </p>
+
+                    </div>
+
+
+                    <div class="p-6 rounded-xl bg-offwhite border border-navy/10">
+
+                        <span class="font-serif font-bold text-navy text-lg block mb-2">
+                            2. Keep expectations realistic
+                        </span>
+
+                        <p class="text-xs sm:text-sm text-secondary-navy/70 leading-relaxed">
+                            Individual experiences can vary, and no sleep product should be presented as a guaranteed solution.
+                        </p>
+
+                    </div>
+
+
+                    <div class="p-6 rounded-xl bg-offwhite border border-navy/10">
+
+                        <span class="font-serif font-bold text-navy text-lg block mb-2">
+                            3. Keep healthy habits in place
+                        </span>
+
+                        <p class="text-xs sm:text-sm text-secondary-navy/70 leading-relaxed">
+                            A sleep-focused product should be considered alongside healthy sleep habits, not as a replacement for them.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OUR EDITORIAL VIEW -->
+        <section class="py-16 md:py-20 bg-offwhite">
+
+            <div class="max-w-3xl mx-auto px-6">
+
+                <div class="bg-pure-white p-8 sm:p-10 rounded-2xl border border-navy/10 shadow-sm space-y-6">
+
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-navy text-center">
+                        Our Review
+                    </h2>
+
+                    <p class="text-secondary-navy/80 text-sm sm:text-base font-light leading-relaxed">
+                        Yu Sleep is one sleep-focused product we reviewed while looking at options for people interested in learning more about sleep support. The official presentation provides more detailed information about the product, its ingredients, and how it is presented. We recommend reviewing that information directly rather than relying on promotional claims alone.
+                    </p>
+
+
+                    <div class="p-5 rounded-xl bg-gold/10 border border-gold/30">
+
+                        <p class="text-xs sm:text-sm text-secondary-navy/80 leading-relaxed">
+
+                            <strong class="font-semibold text-navy">
+                                Keep in mind:
+                            </strong>
+
+                            Individual experiences can vary. ThriveLane does not guarantee results and does not present Yu Sleep as a treatment or cure for a medical condition.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SLEEP BASICS -->
+        <section class="py-16 md:py-20 bg-pure-white border-t border-navy/10">
+
+            <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+
+                <h2 class="font-serif text-3xl font-bold text-navy">
+                    Sleep Basics Still Matter
+                </h2>
+
+                <p class="text-secondary-navy/80 text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed">
+                    A sleep product is only one part of the bigger picture. Healthy nighttime habits can help create a better environment for rest.
+                </p>
+
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+
+                    <div class="p-4 rounded-xl bg-offwhite border border-navy/5 text-xs font-medium text-navy">
+                        Consistent schedule
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-offwhite border border-navy/5 text-xs font-medium text-navy">
+                        Comfortable bedroom
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-offwhite border border-navy/5 text-xs font-medium text-navy">
+                        Less evening screen stimulation
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-offwhite border border-navy/5 text-xs font-medium text-navy">
+                        Time to wind down
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN CTA -->
+        <section class="bg-navy text-pure-white py-16 md:py-24">
+
+            <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold">
+                    Want to Learn More About Yu Sleep?
+                </h2>
+
+                <p class="text-offwhite/80 text-sm sm:text-base font-light max-w-xl mx-auto leading-relaxed">
+                    Review the official Yu Sleep presentation to learn more about the product and decide for yourself whether you want to explore it further.
+                </p>
+
+                <div class="pt-2 flex flex-col items-center">
+
+                    <a
+                        href="https://hop.clickbank.net/?affiliate=sleephevn&vendor=yusleep&op=vsl&tid=tracking"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex justify-center items-center px-8 py-4 rounded-xl bg-gold text-navy font-semibold hover:bg-white transition-all shadow-lg text-sm group">
+
+                        View the Official Yu Sleep Presentation
+
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                             fill="none"
+                             stroke="currentColor"
+                             viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M14 5l7 7m0 0l-7 7m7-7H3">
+                            </path>
+
+                        </svg>
+
+                    </a>
+
+                    <span class="text-[11px] text-offwhite/50 mt-3">
+                        External link to the official Yu Sleep presentation.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#07172d] text-offwhite/60 py-12 border-t border-white/10 text-xs">
+
+        <div class="max-w-5xl mx-auto px-6 space-y-8">
+
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-white/10 pb-8">
+
+                <div>
+
+                    <span class="font-serif text-lg font-bold text-pure-white block">
+                        THRIVELANE
+                    </span>
+
+                    <span class="tracking-widest uppercase text-offwhite/40 text-[10px]">
+                        BETTER SLEEP, BETTER LIFE
+                    </span>
+
+                </div>
+
+
+                <div class="flex flex-wrap gap-4 text-offwhite/70 text-xs">
+
+                    <a href="#" class="hover:text-pure-white transition-colors">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="hover:text-pure-white transition-colors">
+                        Disclaimer
+                    </a>
+
+                    <a href="#" class="hover:text-pure-white transition-colors">
+                        Affiliate Disclosure
+                    </a>
+
+                    <a href="#" class="hover:text-pure-white transition-colors">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="space-y-4 text-[11px] leading-relaxed text-offwhite/50 max-w-3xl">
+
+                <p>
+                    <strong class="text-offwhite/70 font-semibold">
+                        Affiliate Disclosure:
+                    </strong>
+
+                    Some links on this page are affiliate links. If you make a purchase through one of these links, ThriveLane may receive compensation at no additional cost to you.
+                </p>
+
+
+                <p>
+                    <strong class="text-offwhite/70 font-semibold">
+                        Editorial Disclosure:
+                    </strong>
+
+                    ThriveLane is an independent information and review website. It is not the creator, manufacturer, or owner of Yu Sleep.
+                </p>
+
+
+                <p>
+                    <strong class="text-offwhite/70 font-semibold">
+                        Health Disclaimer:
+                    </strong>
+
+                    The information on this website is provided for general educational purposes and is not medical advice. Individual experiences may vary. If you have persistent sleep difficulties, a diagnosed sleep condition, take medication, are pregnant, or have other health concerns, speak with a qualified healthcare professional before trying a new sleep product.
+                </p>
+
+            </div>
+
+
+            <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-offwhite/40 text-[11px]">
+
+                <p>
+                    © 2026 ThriveLane. All rights reserved.
+                </p>
+
+                <p>
+                    Independent sleep wellness information.
+                </p>
+
+            </div>
+
         </div>
-    </section>
-    <!-- Quote -->
-    <section class="py-20 bg-navy text-white">
-        <div class="container mx-auto px-6 text-center">
-            <div class="text-gold text-6xl mb-8">"</div>
-            <p class="text-3xl md:text-5xl font-serif italic mb-10 max-w-4xl mx-auto">Sleep is the single most effective thing we can do to reset our brain and body.</p>
-            <p class="text-gold font-semibold uppercase tracking-widest">— Matthew Walker</p>
-        </div>
-    </section>
-    <!-- Verification Section -->
-    <section id="verification-section" class="py-24 text-center">
-        <!-- Content Locker Placeholder -->
-        <div id="content-locker-placeholder"></div>
-    </section>
-    <!-- Footer -->
-    <footer class="py-10 text-center text-sm opacity-60">
-        <div class="flex justify-center gap-6 mb-4">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Disclaimer</a>
-        </div>
-        <p>&copy; 2026 ThriveLane. All rights reserved.</p>
+
     </footer>
-    <!-- Sticky Button -->
-    <div class="fixed bottom-6 left-0 right-0 flex justify-center z-50 px-4">
-        <button onclick="redirectToLocker()" class="bg-navy text-white px-8 py-3 rounded-full shadow-2xl hover:bg-secondary transition-all font-semibold">Download Why We Sleep</button>
-    </div>
+
 </body>
 </html>
